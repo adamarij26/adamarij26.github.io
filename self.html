@@ -6,8 +6,75 @@
 <body>
 
 <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
 
 <iframe src="selfport/index.html" height="480" width="400" title="p5 self portrait"></iframe>
+
+<pre>function setup() {
+  createCanvas(400, 500);
+  background(220);
+  noStroke();
+
+  // Hair
+  fill(80, 50, 30); // dark brown
+  ellipse(200, 250, 230, 300);
+
+  // Face
+  fill(247, 217, 200);
+  ellipse(200, 230, 180, 220);
+
+  // Left Blush 
+  fill(255,192,192);
+  ellipse(140, 255, 40, 20);
+  
+  //Right Blush
+  fill(255,192,192);
+  ellipse(260, 255, 40, 20);
+  
+  // Bangs
+  fill(80, 50, 30);
+  arc(200, 190, 180, 180, PI, TWO_PI);
+  
+  // Eyes
+  fill(0);
+  ellipse(170, 220, 25, 25);
+  ellipse(230, 220, 25, 25);
+  
+ // Eyelashes
+  stroke(0);
+  strokeWeight(2.5);
+  strokeJoin(ROUND);
+  fill(0);
+
+  // Left Eyelash
+  beginShape();
+  vertex(167, 210); // bottom 
+  vertex(150, 215); // tip
+  vertex(160, 220); // top 
+  endShape();
+
+  // Right Eyeylash
+  beginShape();
+  vertex(236, 210);
+  vertex(250, 215);
+  vertex(240, 220);
+  endShape();
+  
+  // Shine
+  noStroke(0);
+  fill(255);
+  ellipse(175, 215, 5, 5);
+  ellipse(235, 215, 5, 5);
+  
+  // Mouth
+  fill(230, 120, 130);
+  arc(200, 270, 50, 30, 0, PI);
+  
+  // Shirt
+  fill(50, 50, 50);
+  rect(130, 320, 140, 200, 20);
+ 
+
+}</pre>
 </body>
 </html>
