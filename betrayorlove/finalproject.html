@@ -28,7 +28,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size:1em;
     line-height:1.4;
-    margin-top: 0;        /* move text higher */
+    margin-top: 0;        
     padding-top: 0; 
     pid="1" name="Warm Home" tags="" position="675,275" size="100,100"
 
@@ -49,15 +49,14 @@
 }
 
 .wood-border {
-  --border-color: #8B5E3C;
-  --background-color: #fff3e0;
   margin-bottom: 2em;
   margin-top: 1vh;
   padding-top: 0.5em;
   
-  background-color: var(--background-color);
-  color: #3e2f1c;
-  border: 10px solid var(--border-color);
+  background-image: url('background/wood2.jpeg');
+  color: #ffffff;
+  border: 10px solid transparent;
+  border-image: url('background/wood.jpeg') 30 round;
   border-radius: 14px;
   padding: 2vw;
   margin: 2vh auto;
@@ -67,6 +66,10 @@
     0 0 15px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
+
+.stone-border{
+  border-image: url('background/stone.jpeg') 30 round;
+  background-image: url('background/stone2.jpeg');
 
   .link-options {
    padding-top: 1em;
@@ -163,8 +166,7 @@ window.addEventListener('twine:passagestart', function () {
 </div>
 </tw-passagedata>
 <tw-passagedata pid="3" name="Look out the window" tags="" position="737.5,400" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0; border-width: 4px;">
-As you look out the window and feeling good, deciding to take a nap.</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">You look out the window and feeling good, deciding to take a nap.</div>
 
 <audio id="backgroundAudio" autoplay loop>
   <source src="sounds/warm.mp3" type="audio/mpeg">
@@ -251,7 +253,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
   window.addEventListener('twine:passagedisplay', function () {
     const newAudio = document.getElementById('pageAudio');
     if (newAudio) {
-      newAudio.volume = 0.2; // Adjust volume as needed
+      newAudio.volume = 0.1; // Adjust volume as needed
     }
   });
 </script>
@@ -279,7 +281,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
   window.addEventListener('twine:passagedisplay', function () {
     const newAudio = document.getElementById('pagefiveAudio');
     if (newAudio) {
-      newAudio.volume = 0.2; // Adjust volume as needed
+      newAudio.volume = 0.1; // Adjust volume as needed
     }
   });
 </script>
@@ -308,7 +310,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
   window.addEventListener('twine:passagedisplay', function () {
     const newAudio = document.getElementById('pagetwoAudio');
     if (newAudio) {
-      newAudio.volume = 0.2; // Adjust volume as needed
+      newAudio.volume = 0.1; // Adjust volume as needed
     }
   });
 </script>
@@ -336,7 +338,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
   window.addEventListener('twine:passagedisplay', function () {
     const newAudio = document.getElementById('pagetwoAudio');
     if (newAudio) {
-      newAudio.volume = 0.2; // Adjust volume as needed
+      newAudio.volume = 0.1; // Adjust volume as needed
     }
   });
 </script>
@@ -353,6 +355,10 @@ As you look out the window and feeling good, deciding to take a nap.</div>
 </tw-passagedata><tw-passagedata pid="10" name="Run Away" tags="" position="675,800" size="100,100">
 <div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As they are trying to get you, it seems almost impossible so they just open their front door. This your first time seeing the outside world being so scared you run outside. The cold air makes you fill up with regret and turn around then you notice the door is closed behind you. What do you do?</div>
 
+<div style="text-align: center;">
+<img src="kiwi/regret.png" alt="regret cat" style="width: 60%; max-width: 700px; margin-top: -500px; margin-bottom: -290px;">
+</div>
+
 <audio id="pagethreeAudio" autoplay>
   <source src="sounds/suspense.mp3" type="audio/mpeg">
 </audio>
@@ -362,23 +368,6 @@ As you look out the window and feeling good, deciding to take a nap.</div>
     const newAudio = document.getElementById('pagethreeAudio');
     if (newAudio) {
       newAudio.volume = 0.1; // Adjust volume as needed
-    }
-  });
-</script>
-
-<div style="text-align: center;">
-<img src="kiwi/regret.png" alt="regret cat" style="width: 60%; max-width: 700px; margin-top: -500px; margin-bottom: -200px;">
-</div>
-
-<audio id="pagetwoAudio" autoplay>
-  <source src="sounds/puzzle.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  window.addEventListener('twine:passagedisplay', function () {
-    const newAudio = document.getElementById('pagetwoAudio');
-    if (newAudio) {
-      newAudio.volume = 0.2; // Adjust volume as needed
     }
   });
 </script>
@@ -451,7 +440,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
 <div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As you look through door to door, you get shut out or scared but you don&#39;t give up, finally at the sixth person you&#39;ve come across that day, they seem to be very friendly to you. They pick you up, and carry you home. You are in a new home you feel scared wondering if it might happen again what do you do? </div>
 
 <div style="text-align: center;">
-<img src="kiwi/lovepls.png" alt="love cat" style="width: 90%; max-width: 600px; margin-top: -350px; margin-bottom: -350px;">
+<img src="kiwi/lovepls.png" alt="love cat" style="width: 100%; max-width: 800px; margin-top: -350px; margin-bottom: -500px;">
 </div>
 
 <audio id="pagetwoAudio" autoplay>
@@ -477,7 +466,7 @@ As you look out the window and feeling good, deciding to take a nap.</div>
   </div>
 </div>
 </tw-passagedata><tw-passagedata pid="14" name="Learn to be alone" tags="" position="400,875" size="100,100">
-<div class="wood-border" style="--border-color: #33617d; --background-color: #669cad;">The anger and sadness against humans grew and you&#39;ve become a stray whether you know it or not. New possible owners pass you but you either run or hiss at people. The betrayal of humans you believe there&#39;s no going back from the love and care that you once had, it&#39;s all gone.
+<div class="wood-border stone-border" style="--border-color: #33617d; --background-color: #669cad;">The anger and sadness against humans grew and you&#39;ve become a stray whether you know it or not. New possible owners pass you but you either run or hiss at people. The betrayal of humans you believe there&#39;s no going back from the love and care that you once had, it&#39;s all gone.
 
 You are alone. You stopped trying again. The city is colder. </div>
 
@@ -599,7 +588,7 @@ The End
 </script>
 
 [[End]] </tw-passagedata><tw-passagedata pid="19" name="Start to hide" tags="" position="1075,975" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As they are about to carry you, you start to run and hide, feeling so scared you decide to give up on finding a new owner, you believe that it&#39;s not the right life for you and you know you have to start to fight for yourself. You give up to try again.</div>
+<div class="wood-border stone-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As they are about to carry you, you start to run and hide, feeling so scared you decide to give up on finding a new owner, you believe that it&#39;s not the right life for you and you know you have to start to fight for yourself. You give up to try again.</div>
 
 <audio id="pagesixAudio" autoplay>
   <source src="sounds/sadend.mp3" type="audio/mpeg">
