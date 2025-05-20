@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>finalproject</title>
-<style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
+<style title="Twine CSS">
+@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
@@ -83,173 +84,539 @@
   }
 }
 </style>
-<script role="script" id="twine-user-script" type="text/twine-javascript">
-</script>
 <tw-passagedata pid="1" name="Warm Home" tags="" position="675,275" size="100,100">
-<div class="wood-border">The sun is shining through your house window and youre all curled up feeling the warmth from the sun. Life is simple and good, your food bowl is full, and your owner did everything for you.
+<div class="wood-border">The sun is shining through your house window and you're all curled up feeling the warmth from the sun. Life is simple and good, your food bowl is full, and your owner did everything for you.
 
 What do you want to do?
-
 </div>
 
-<br><br>
+<audio id="backgroundAudio" autoplay loop>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
 
+<audio id="meowAudio">
+  <source src="sounds/purr.mp3" type="audio/mpeg">
+</audio>
 
-<div class="link-options">
-[[Lick yourself and nap]]
- [[Look out the window]]
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const bg = document.getElementById('backgroundAudio');
+    const meow = document.getElementById('meowAudio');
+
+    if (bg) {
+      bg.volume = 0.1;
+    }
+
+    if (meow) {
+      meow.currentTime = 0;
+      meow.play().catch(e => console.log("Meow autoplay blocked:", e));
+    }
+  });
+</script>
+
+<div style="text-align: center;">
+  <img src="kiwi/sleeply.png" alt="A cozy cat" style="width: 70%; max-width: 600px; margin-top: -400px; margin-bottom: -200px;">
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Lick yourself and nap]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Look out the window]]
+  </div>
+</div>
+
+</tw-passagedata>
+
+<script role="script" id="twine-user-script" type="text/twine-javascript">
+window.addEventListener('twine:passagestart', function () {
+  const audio = document.getElementById('backgroundAudio');
+  if (audio) {
+    audio.pause();
+    audio.remove();
+  }
+});
+</script>
+<tw-passagedata pid="2" name="Lick yourself and nap" tags="" position="612.5,400" size="100,100">
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">As you lick yourself and take nap feeling safe.</div>
+
+<div style="text-align: center;">
+<img src="kiwi/lick.png" alt="sleepy cat" style="width: 90%; max-width: 450px; margin-top: -300px; margin-bottom: -200px;">
+</div>
+
+<audio id="backgroundAudio" autoplay>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('backgroundAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+ <div class="link-options" style="flex: 1; text-align: center;">
+[[Wake up to a new day]]
 </div>
 </tw-passagedata>
-<tw-passagedata pid="2" name="Lick yourself and nap" tags="" position="612.5,400" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-As you lick yourself and take nap feeling safe.</div>
-
- [[Wake up to a new day]]</tw-passagedata>
 <tw-passagedata pid="3" name="Look out the window" tags="" position="737.5,400" size="100,100">
 <div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0; border-width: 4px;">
 As you look out the window and feeling good, deciding to take a nap.</div>
 
-<br><br>
+<audio id="backgroundAudio" autoplay loop>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
 
-<div class="link-options">
+<div style="text-align: center;">
+<img src="kiwi/window.jpg" alt="A cozy cat" style="width: 50%; max-width: 250px; margin-top: -90px; margin-bottom: -80px;">
+</div>
+
+<div class="link-options" style="flex: 1; text-align: center;">
 [[Wake up to a new day]]
 </div>
 </tw-passagedata>
 <tw-passagedata pid="4" name="Wake up to a new day" tags="" position="600,525" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-You wake up to a new day, feeling hungry as usual, but something feels off... You notice the food bowl is empty and your owner is ignoring you. You&#39;re confused, what should you do?</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">You wake up to a new day, feeling hungry as usual, but something feels off... You notice the food bowl is empty and your owner is ignoring you. You&#39;re confused, what should you do?</div>
 
-<br><br>
-
-<div class="link-options">
- [[Try to find food on your own]]
- [[Rub against your owner&#39;s leg]]
+<div style="text-align: center;">
+<img src="kiwi/confused.png" alt="confused cat" style="width: 70%; max-width: 400px; margin-top: -250px; margin-bottom: -300px;">
 </div>
+
+<audio id="confusedAudio" autoplay loop>
+  <source src="sounds/confusion.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('confusedAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left; font-size: 0.9em;">
+    [[Try to find food on your own]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right; font-size: 0.9em;">
+    [[Rub against your owner's leg]]
+  </div>
+</div>
+
 </tw-passagedata>
 <tw-passagedata pid="5" name="Try to find food on your own" tags="" position="550,650" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">
-There's usually mice around, never had the feeling of hunger before but you have to eat something so a mouse it is. It&#39;s delicious and leaving you feeling full and you start to resent your owner because you can feed yourself at the end of the day. Later they want to pick you up. What do you do?</div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">There's usually mice around, never had the feeling of hunger before but you have to eat something so a mouse it is. It&#39;s delicious and leaving you feeling full and you start to resent your owner because you can feed yourself at the end of the day. Later they want to pick you up. What do you do?</div>
 
-<br><br>
-
-<div class="link-options">
-[[Hiss]] 
-[[Run]]
+<div style="text-align: center;">
+<img src="kiwi/resent.png" alt="mad cat" style="width: 70%; max-width: 400px; margin-top: -350px; margin-bottom: -260px;">
 </div>
+<audio id="pagethreeAudio" autoplay>
+  <source src="sounds/suspense.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagethreeAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Hiss]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Run]]
+  </div>
+</div>
+
 </tw-passagedata><tw-passagedata pid="6" name="Rub against your owner&#39;s leg" tags="" position="675,650" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-Well you have an owner for a reason right? They love getting attention from you but as you try to give some attention they push you away. You think that they are just playing with you, you try again but this time they yell at you. They&#39;ve never yelled at you, and you run away frightened.</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">Well you have an owner for a reason right? They love getting attention from you but as you try to give some attention they push you away. You think that they are just playing with you, you try again but this time they yell at you. They&#39;ve never yelled at you, and you run away frightened.</div>
 
-<br><br>
+<div style="text-align: center;">
+<img src="kiwi/run.png" alt="run cat" style="width: 90%; max-width: 600px; margin-top: -400px; margin-bottom: -500px;">
+</div>
 
-<div class="link-options">
-[[Try again]]
-[[Run Away]]
+<audio id="pageAudio" autoplay>
+  <source src="sounds/meow1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pageAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Try again]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Run Away]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="7" name="Hiss" tags="" position="400,750" size="100,100">
-<div class="wood-border" style="--border-color: #337d4d; --background-color: #fff3e0;">
-You've never hissed at your owner but the feeling of not knowing what is your next meal is makes you feel scared and angry so you hiss at them. This was their last straw, and they throw you out of their house and into a dark alleyway. The feeling of being scared just grew stronger. What do you do?</div>
+<div class="wood-border" style="--border-color: #337d4d; --background-color: #d1f0e6;">You've never hissed at your owner but the feeling of not knowing when's your next meal, makes you feel scared and angry so you hiss at them. This was their last straw, and they throw you out of their house and into a dark alleyway. The feeling of being scared just grew stronger. What do you do?</div>
 
-<br><br>
-
-<div class="link-options">
-[[Learn to be alone]]
-[[Find a new home]]
+<div style="text-align: center;">
+<img src="kiwi/scared.png" alt="angry cat" style="width: 80%; max-width: 400px; margin-top: -450px; margin-bottom: -175px;">
 </div>
+
+<audio id="pagefiveAudio" autoplay>
+  <source src="sounds/scared.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagefiveAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Learn to be alone]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Find a new home]]
+  </div>
+</div>
+
 </tw-passagedata><tw-passagedata pid="8" name="Run" tags="" position="550,775" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">
-After running your owner tries to catch you again, confused as to why they want to hold you again. What do you do?</div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">After running your owner tries to catch you again, confused as to why they want to hold you again. What do you do?</div>
 
-<br><br>
+<div style="text-align: center;">
+<img src="kiwi/confusion.png" alt="confused cat" style="width: 90%; max-width: 700px; margin-top: -500px; margin-bottom: -600px;">
+</div>
 
-<div class="link-options">
-[[Try again]] 
-[[Hiss]]
+<audio id="pagetwoAudio" autoplay>
+  <source src="sounds/puzzle.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagetwoAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Try again]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Hiss]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="9" name="Try again" tags="" position="825,750" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-They hold you and put you into some bag... you don't understand what is happening but you have to endure it. After a terrifying ride to somewhere, you are being carried in a bag but there&#39;s a different person... they take you to a new house. What do you do?</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">They hold you and put you into some bag... you don't understand what is happening but you have to endure it. After a terrifying ride to somewhere, you are being carried in a bag but there&#39;s a different person... they take you to a new house. What do you do?</div>
 
-<br><br>
-
-<div class="link-options">
-[[Hide under a couch]]
-[[Be Friendly]]
+<div style="text-align: center;">
+<img src="kiwi/kiwi.png" alt="confused cat" style="width: 90%; max-width: 700px; margin-top: -500px; margin-bottom: -400px;">
 </div>
+
+<audio id="pagetwoAudio" autoplay>
+  <source src="sounds/puzzle.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagetwoAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Hide under a couch]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Be Friendly]]
+  </div>
+</div>
+
 </tw-passagedata><tw-passagedata pid="10" name="Run Away" tags="" position="675,800" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">
-As they are trying to get you it seems almost impossible so they just open their front door, your first time seeing the outside and feeling so terrified you run outside and you feel the cool air around and feel regret and you turn around and notice the door is closed behind you. What do you do?</div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As they are trying to get you, it seems almost impossible so they just open their front door. This your first time seeing the outside world being so scared you run outside. The cold air makes you fill up with regret and turn around then you notice the door is closed behind you. What do you do?</div>
 
-<br><br>
+<audio id="pagethreeAudio" autoplay>
+  <source src="sounds/suspense.mp3" type="audio/mpeg">
+</audio>
 
-<div class="link-options">
-[[Find a new home]]
-[[Learn to be alone]]
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagethreeAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="text-align: center;">
+<img src="kiwi/regret.png" alt="regret cat" style="width: 60%; max-width: 700px; margin-top: -500px; margin-bottom: -200px;">
+</div>
+
+<audio id="pagetwoAudio" autoplay>
+  <source src="sounds/puzzle.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagetwoAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Find a new home]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Learn to be alone]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="11" name="Hide under a couch" tags="" position="825,875" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">
-As you are in a brand new house your new owner is now patient with you, waiting you to come out of the couch, calling for you, meowing at you, and with treats. Hearing your belly feeling empty what do you do?</div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As you are in a brand new house your new owner is now patient with you, waiting for you to come out of the couch, calling for you, meowing at you, and with treats. Hearing your belly feel empty what do you do?</div>
 
-<br><br>
+<div style="text-align: center;">
+<img src="kiwi/under.jpg" alt="under cat" style="width: 50%; max-width: 600px; margin-top: -500px; margin-bottom: -170px;">
+</div>
 
-<div class="link-options">
-[[Eat the treat]]
-[[Stay hidden]]
+<audio id="pagethreeAudio" autoplay>
+  <source src="sounds/suspense.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagethreeAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Eat the treat]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Stay hidden]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="12" name="Be Friendly" tags="" position="1000,800" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-With your friendly attitude your new owner starts to hold you close and make you feel so safe and once they let go, they start to feed you. What do you do?</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">With your friendly attitude your new owner starts to hold you close and make you feel so safe and once they let go, they start to feed you. What do you do?</div>
 
-<br><br>
+<div style="text-align: center;">
+<img src="kiwi/curious.png" alt="under cat" style="width: 80%; max-width: 600px; margin-top: -500px; margin-bottom: -450px;">
+</div>
 
-<div class="link-options">
-[[Eat]]
-[[Start to hide]]
+<audio id="pagetwoAudio" autoplay>
+  <source src="sounds/puzzle.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagetwoAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Eat]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Start to hide]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="13" name="Find a new home" tags="" position="600,950" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">
-As you look through your options house to house, you get shut out or scared but you don&#39;t give up, finally at the tenth person you&#39;ve come across that day, they seem to be very friendly to you. They pick you up, and carry you home. </div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As you look through door to door, you get shut out or scared but you don&#39;t give up, finally at the sixth person you&#39;ve come across that day, they seem to be very friendly to you. They pick you up, and carry you home. You are in a new home you feel scared wondering if it might happen again what do you do? </div>
 
-As you are in a new home you feel scared wondering if it might happen again what do you do?
+<div style="text-align: center;">
+<img src="kiwi/lovepls.png" alt="love cat" style="width: 90%; max-width: 600px; margin-top: -350px; margin-bottom: -350px;">
+</div>
 
-<br><br>
+<audio id="pagetwoAudio" autoplay>
+  <source src="sounds/puzzle.mp3" type="audio/mpeg">
+</audio>
 
-<div class="link-options">
-[[Hide under a couch]] 
-[[Be Friendly]] 
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagetwoAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <div class="link-options" style="flex: 1; text-align: left;">
+    [[Hide under a couch]]
+  </div>
+  <div class="link-options" style="flex: 1; text-align: right;">
+    [[Be Friendly]]
+  </div>
 </div>
 </tw-passagedata><tw-passagedata pid="14" name="Learn to be alone" tags="" position="400,875" size="100,100">
-<div class="wood-border" style="--border-color: #33617d; --background-color: #fff3e0;">
-The anger and sadness against humans grew and you&#39;ve become a stray whether you know it or not. New possible owners pass you but you either run or hiss at people. The betrayal of humans you believe there&#39;s no going back from the love and care that you once had, it&#39;s all gone.</div>
+<div class="wood-border" style="--border-color: #33617d; --background-color: #669cad;">The anger and sadness against humans grew and you&#39;ve become a stray whether you know it or not. New possible owners pass you but you either run or hiss at people. The betrayal of humans you believe there&#39;s no going back from the love and care that you once had, it&#39;s all gone.
 
-You are alone. You stop trying again. The city is colder. 
+You are alone. You stopped trying again. The city is colder. </div>
 
-<br><br>
+<audio id="pagesixAudio" autoplay>
+  <source src="sounds/sadend.mp3" type="audio/mpeg">
+</audio>
 
-<div class="link-options">
-[[End]]
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagesixAudio');
+    if (newAudio) {
+      newAudio.volume = 0.2; // Adjust volume as needed
+    }
+  });
+</script>
+<div style="text-align: center;">
+<img src="kiwi/sadness.png" alt="sad cat" style="width: 80%; max-width: 500px; margin-top: -350px; margin-bottom: -350px;">
 </div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+<div class="link-options" style="flex: 1; text-align: center;">
+    [[End]]
+  </div>
+</div>
+
 </tw-passagedata>
 <tw-passagedata pid="15" name="End" tags="" position="400,1000" size="100,100">
-<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">
-It&#39;s important to understand what others do to mean a lot and it can happen with a blink of an eye. The feeling of betrayal and neglect is an unfortunate common action people do to animals or even to other humans, it up to you as a cat in this game or you as you to seek the happiness you deserve whether it takes one try or ten tries it will come to you. If you give up on yourself others you give up on you too.</div>
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">It&#39;s important to understand what others do to mean a lot and it can happen with a blink of an eye. The feeling of betrayal and neglect is an unfortunate common action people do to animals or even to other humans, it up to you as a cat in this game or you as you to seek the happiness you deserve whether it takes one try or ten tries it will come to you. If you give up on yourself others you give up on you too.</div>
 
 It&#39;s up to you.
 
 The End
 
+<div style="text-align: right;">
+<img src="kiwi/care.png" alt="happy cat" style="width: 70%; max-width: 400px; margin-top: -400px; margin-bottom: -20px;">
+</div>
 
-[[Restart the story-&gt;Warm Home]]</tw-passagedata><tw-passagedata pid="16" name="Eat the treat" tags="" position="775,1025" size="100,100">
+
+<audio id="backgroundAudio" autoplay>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('backgroundAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+[[Restart the story-&gt;Warm Home]]</tw-passagedata><tw-passagedata pid="16" name="Eat the treat" tags="" position="800,1200" size="100,100">
 <div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">After you eat the treat you are given another treat and another, your new owner notices you loves those treats and feeds you a larger entree and lightly pets you while you eat. You feel the care and love you wanted before.</div>
 
-[[End]]</tw-passagedata><tw-passagedata pid="17" name="Stay hidden" tags="" position="925,1025" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">They wait and wait until you start to believe that they aren&#39;t going to give up on you. You end up getting out under the couch and you see they&#39;re expression with so much excitement, holding you and letting you go to give you a treat as you eat it you feel safe with them.</div>
+<div style="text-align: center;">
+<img src="kiwi/love.png" alt="happy cat" style="width: 70%; max-width: 400px; margin-top: -400px; margin-bottom: -250px;">
+</div>
 
-[[End]] </tw-passagedata><tw-passagedata pid="18" name="Eat" tags="" position="625,1075" size="100,100">
+<audio id="backgroundAudio" autoplay>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('backgroundAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+<div class="link-options" style="flex: 1; text-align: center;">
+    [[End]]
+  </div>
+</div>
+</tw-passagedata><tw-passagedata pid="17" name="Stay hidden" tags="" position="925,1025" size="100,100">
+<div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">They wait and wait until you start to believe that they aren&#39;t going to give up on you. You end up getting out under the couch and you see they&#39;re expression with so much excitement, holding you and letting you go to give you a treat as you eat it you feel safe with them.</div>
+
+<div style="text-align: center;">
+<img src="kiwi/treat.png" alt="happy cat" style="width: 70%; max-width: 400px; margin-top: -300px; margin-bottom: -300px;">
+</div>
+
+<audio id="backgroundAudio" autoplay>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('backgroundAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+<div class="link-options" style="flex: 1; text-align: center;">
+    [[End]]
+  </div>
+</div> </tw-passagedata><tw-passagedata pid="18" name="Eat" tags="" position="625,1075" size="100,100">
 <div class="wood-border" style="--border-color: #8B5E3C; --background-color: #fff3e0;">Once you eat you feel so full and it gets you tired and you want to sleep you see that your new owner had bought you a new bed and you start to fall asleep feeling with love and care you deserved from the very beginning.</div>
 
+<div style="text-align: center;">
+<img src="kiwi/bed.jpeg" alt="happy cat" style="width: 70%; max-width: 400px; margin-top: -300px; margin-bottom: -200px;">
+</div>
+
+<audio id="backgroundAudio" autoplay>
+  <source src="sounds/warm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('backgroundAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
 [[End]] </tw-passagedata><tw-passagedata pid="19" name="Start to hide" tags="" position="1075,975" size="100,100">
-<div class="wood-border" style="--border-color: #7d6833; --background-color: #fff3e0;">As they are about to carry you, you start to run and hide, feeling so scared you decide to give up on finding a new owner, you believe that it&#39;s not the right life for you and you know you have to start to fight for yourself. You give up to try again.</div>
+<div class="wood-border" style="--border-color: #7d6833; --background-color: #d6ce83;">As they are about to carry you, you start to run and hide, feeling so scared you decide to give up on finding a new owner, you believe that it&#39;s not the right life for you and you know you have to start to fight for yourself. You give up to try again.</div>
+
+<audio id="pagesixAudio" autoplay>
+  <source src="sounds/sadend.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('twine:passagedisplay', function () {
+    const newAudio = document.getElementById('pagesixAudio');
+    if (newAudio) {
+      newAudio.volume = 0.1; // Adjust volume as needed
+    }
+  });
+</script>
+
+<div style="text-align: center;">
+<img src="kiwi/giveup.png" alt="sad cat" style="width: 90%; max-width: 500px; margin-top: -450px; margin-bottom: -250px;">
+</div>
 
 [[Learn to be alone]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";

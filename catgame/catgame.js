@@ -1,0 +1,138 @@
+var ballx = 300;
+var bally = 300;
+var size1= 60;
+var size2= 80;
+var size3= 100;
+var score =0;
+var bg1, bg2, bg3;
+var transitionStart= 0;
+var gameState= "L1";
+
+var img1, img2, img3;
+
+function preload() {
+  img1 = loadImage("https://adamarij26.github.io/sittingcat.png"); // image for Level 1
+  img2 = loadImage("https://adamarij26.github.io/loaf.png"); // image for Level 2
+  img3 = loadImage("https://adamarij26.github.io/friendlycat.png"); // image for Level 3
+  
+  //background image
+  bg1= loadImage("https://adamarij26.github.io/field.jpg");
+  bg2= loadImage("https://adamarij26.github.io/alleyway.jpg");
+  bg3= loadImage("https://adamarij26.github.io/neighborhood.jpg");
+}
+
+function setup() {
+    createCanvas(600,600);
+    image(bg1, 0, 0, width, height);
+    image(bg2, 0, 0, width, height);
+    image(bg3, 0, 0, width, height);
+    textAlign(CENTER);
+    textSize(20);
+}//end of the setup
+
+
+function draw() {
+    background(240);
+  if (gameState== "L1"){
+    levelOne();
+  } if (gameState== "TO_L2") {
+    transitionScreen("Level 2", "L2");
+    }
+  if (gameState=="L2"){
+   levelTwo(); 
+  } if(gameState== "TO_L3") {
+    transitionScreen("Level 3", "L3");
+  }
+  if (gameState=="L3"){
+   levelThree(); 
+  }
+   if (gameState=="WIN"){
+   winningScreen(); 
+  }
+    
+    text(("Cats Captured: " + score), width/2, 40);
+}//end of draw
+
+function transitionScreen(nextLevelText, nextGameState) {
+  background(0, 150, 200);
+  fill(255);
+  textSize(28);
+  text("You captured enough cats!", width / 2, height / 2 - 20);
+  text("Get ready for " + nextLevelText + "!", width / 2, height / 2 + 20);
+
+  // Wait 2 seconds, then continue
+  if (millis() - transitionStart > 2000) {
+    gameState = nextGameState;
+  }
+}
+
+function levelOne(){
+  imageMode(CORNER);
+  image(bg1, 0, 0, width, height);
+  text("Level 1:The Field Cat", width/2,height-20);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
+  if(distToBall < size1/2){
+    ballx= random(width);
+    bally= random(height);
+    score= score + 1;
+  }
+  if(score > 10){
+    transitionStart = millis();
+    gameState="TO_L2";
+  }
+  
+  imageMode(CENTER);
+  image(img1,ballx, bally, size1, size1);
+  
+}//end of level 1
+
+function levelTwo(){
+  imageMode(CORNER);
+  image(bg2, 0, 0, width, height);
+  text("Level 2:The Alleyway Cat", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+  if (distToBall <size2/2){
+    ballx = random(width);
+    bally= random(height);
+    score= score +1;
+  }
+  if(score > 25){
+    transitionStart = millis();
+   gameState = "TO_L3";
+
+  }
+  
+//  line(ballx, bally, mouseX, mouseY);
+    imageMode(CENTER);
+    image(img2,ballx,bally,size2, size2);
+} // end level two
+
+function levelThree(){
+  imageMode(CORNER);
+    image(bg3, 0, 0, width, height);
+  text("Level 3:The Neighborhood Cat", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+  if (distToBall <size3/2){
+    ballx = random(width);
+    bally= random(height);
+    size3= max(size3,10); 
+    score= score +1;
+  }
+  if(score > 45){
+    gameState = "WIN";// winning screen
+  }
+  
+//  line(ballx, bally, mouseX, mouseY);
+  imageMode(CENTER);
+  image(img3, ballx, bally, size3, size3);
+} // end level three
+
+
+function winningScreen() { //winning screen
+  background(50, 200, 100);
+  textSize(36);
+  fill(255);
+  text("You captured all kitty friends!", width / 2, height / 2);
+  textSize(20);
+  text("Final Score: " + score, width / 2, height / 2 + 40);
+}
